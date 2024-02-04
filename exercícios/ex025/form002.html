@@ -6,15 +6,16 @@
     <title>Teste de formulário</title>
 </head>
 <body>
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iusu">Usuário:
-                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15">
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="10" placeholder="Nome do usuário" autocomplete="username">
             </label>
         </p>
         <p>
-            <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen" minlength="8" >
+            <label for="isen">Senha:
+                <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="9" placeholder="Mínimo 8 letras" autocomplete="current-password">
+            </label>
         </p>
         <p>
             <input type="submit" value="Enviar">
